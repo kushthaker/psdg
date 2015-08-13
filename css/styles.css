@@ -13,6 +13,7 @@
     margin-left: -250px;
     overflow-y: auto;
     background: grey;
+    width: 250px;
 }
 
 #page-content-wrapper {
@@ -23,11 +24,6 @@
 
 
 @media(min-width:768px) {
-
-
-    #sidebar-wrapper {
-        width: 250px;
-    }
 
     #page-content-wrapper {
         padding: 20px;
