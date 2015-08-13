@@ -4,10 +4,6 @@ var app = angular.module('psdg', ['ngRoute']);
 
 app.config(function($routeProvider) {
 	$routeProvider
-	.when('/', {
-		templateUrl: '../partials/home.html',
-		controller: 'psdgCtrl as ctrl'
-	})
 	.when('/about', {
 		templateUrl: '../partials/about.html',
 		controller: 'psdgCtrl as ctrl'
@@ -25,7 +21,7 @@ app.config(function($routeProvider) {
 		controller: 'psdgCtrl as ctrl'
 	})
 	.otherwise({
-		redirectTo: '/',
+		redirectTo: '/about',
 	})
 
 });
