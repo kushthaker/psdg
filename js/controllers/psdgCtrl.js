@@ -1,7 +1,7 @@
-function PsdgCtrl() {
+function PSDGCtrl() {
 	this.hello = 'hello';
 }
 
 
 
-angular.module('psdg').controller('psdgCtrl', PsdgCtrl);
+angular.module('psdg').controller('psdgCtrl', PSDGCtrl);

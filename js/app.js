@@ -9,15 +9,15 @@ app.config(function($routeProvider) {
 		controller: 'psdgCtrl as ctrl'
 	})
 	.when('/about', {
-		templateUrl: '../partials/signin.html',
+		templateUrl: '../partials/about.html',
 		controller: 'psdgCtrl as ctrl'
 	})
 	.when('/services', {
-		templateUrl: '../partials/signin.html',
+		templateUrl: '../partials/services.html',
 		controller: 'psdgCtrl as ctrl'
 	})
 	.when('/thoughts', {
-		templateUrl: '../partials/signin.html',
+		templateUrl: '../partials/thoughts.html',
 		controller: 'psdgCtrl as ctrl'
 	})
 	.when('/contact', {
