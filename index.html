@@ -2,9 +2,9 @@
 <html>
 <head>
 	<!-- STYLES -->
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
 	<link href='http://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
 	<!-- ANGULAR SOURCE -->
 	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
@@ -22,21 +22,30 @@
 	<div id="wrapper">
 		
 		<!-- SIDEBAR -->
-		<div id="sidebar-wrapper">
-			<p>something in here</p>
-		</div>
-
-		<!-- CONTENT -->
-		<div id="page-content-wrapper">
-			<div class="container-fluid">
-				<div ng-view></div>
+		<div id="sidebar-wrapper" class="sidebar-nav">
+			<ul>
+				<p class="sidebar-brand">
+					<a href="#/">
+					PSDG
+					</a>
+				</p>
+				<li><a href="#/about">ABOUT</a></li>
+				<li><a href="#/services">SERVICES</a></li>
+				<li><a href="#/thoughts">THOUGHTS</a></li>
+				<li><a href="#/contact">CONTACT</a></li>
 			</div>
+
+			<!-- CONTENT -->
+			<div id="page-content-wrapper">
+				<div class="container-fluid">
+					<div ng-view></div>
+				</div>
+			</div>
+
 		</div>
 
-	</div>
 
-
-	<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
-	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-</body>
-</html>
+		<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+		<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	</body>
+	</html>

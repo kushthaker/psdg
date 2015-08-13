@@ -1,11 +1,11 @@
 
-[] - figure out how to make sidebar from simple-sidebar startbootstrap theme
+[X] - figure out how to make sidebar from simple-sidebar startbootstrap theme
 
 [] - styles
 
-[] - set up angular templates + controllers, routing
+[X] - set up angular templates + controllers, routing
 	ABOUT
-	WORK
+	WORK (needed?)
 	SERVICES
 	THOUGHTS 
 	TEAM (needed?)
