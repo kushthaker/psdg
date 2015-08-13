@@ -1,0 +1,14 @@
+
+[] - figure out how to make sidebar from simple-sidebar startbootstrap theme
+
+[] - styles
+
+[] - set up angular templates + controllers, routing
+	ABOUT
+	WORK
+	SERVICES
+	THOUGHTS 
+	TEAM (needed?)
+	CONTACT
+
+[] - form handling, email
