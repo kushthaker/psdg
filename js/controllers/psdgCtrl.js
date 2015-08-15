@@ -1,5 +1,5 @@
 function PSDGCtrl() {
-	this.hello = 'hello';
+	this.contact = {};
 }
 
 
