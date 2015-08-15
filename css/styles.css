@@ -1,9 +1,11 @@
 body {
     font-family: 'Lora', serif;
+    color: #636363;
 }
 
-h1 { 
-    font-weight: 700; 
+h1, h3 { 
+    font-weight: 700;
+    margin: 20px 0px;
 }
 
 p {
@@ -12,6 +14,10 @@ p {
 
 #wrapper {
     padding-left: 250px;
+}
+
+#mobile {
+    display: none;
 }
 
 #sidebar-wrapper {
@@ -25,14 +31,15 @@ p {
     overflow-y: auto;
     background: white;
     width: 250px;
-    border-right: solid 1px grey;
+    border-right: solid 1px #636363;
 }
 
 #page-content-wrapper {
-    width: 100%;
-    position: absolute;
-    padding: 15px;
+    padding: 20px;
+    position: relative;
+    width: 850px;
 }
+
 
 /* Sidebar Styles */
 
@@ -57,13 +64,13 @@ p {
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: grey;
+    color: #636363;
 }
 
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;
-    background: grey;
+    background: #636363;
 
 }
 
@@ -76,17 +83,18 @@ p {
 }
 
 .sidebar-brand a {
-    color: grey;
+    color: #636363;
     text-decoration: none;
     font-size: 40px;
     font-weight: 300;
 }
 
 .sidebar-brand a:hover {
-    text-decoration: none;
+    text-decoration: underline;
+
 }
 
-/*BOOTSTRAP FORM OVERRIDE */
+/*BOOTSTRAP OVERRIDE */
 
 .form-control {
     display: block;
@@ -112,14 +120,105 @@ label {
     margin: 0px;
 }
 
+.btn {
+    display: inline-block;
+    width: 30%;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0px;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.btn-default:hover {
+    color: #FFF;
+    background-color: #636363;
+    border-color: #636363;
+}
 
 
 
-@media(min-width:768px) {
+
+@media(max-width:768px) {
 
     #page-content-wrapper {
-        padding: 20px;
-        position: relative;
+        width: 100%;
     }
+
+    #sidebar-wrapper {
+        display: none
+    }
+
+    #wrapper {
+        padding: 0px;
+    }
+
+    #mobile {
+        text-align: center;
+        width: 370px;
+        display: inline;
+    }
+
+    #mobile ul {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #mobile p {
+        display: inline;
+    }
+
+    #mobile li {
+        display: inline;
+        margin: 5px 2px;
+        text-indent: 0px;
+        border-right: solid 1px #636363;
+        padding: 5px 8px;
+        font-size: 11px;
+    }
+
+    #mobile li a {
+        color: #636363;
+    }
+
+    #mobile .brand a {
+        font-size: 20px;
+        font-weight: 700;
+        color: #636363;
+    }
+
+
+    #mobile li a:hover {
+        text-decoration: none;
+        color: #fff;
+        background: #636363;
+        padding: 5px;
+}
+
+}
+
+
+
+
 
 }
